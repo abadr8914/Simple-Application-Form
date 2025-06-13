@@ -1,95 +1,72 @@
-body{
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    background-color: rgb(0, 0, 19);
-    
-
-}
-.container{
-    font-family: Arial, Helvetica, sans-serif;
-    width:auto;
-    padding: 20px;
-    margin: 50px 40px 40px 400px;
-    border: solid rgb(238, 252, 255);
-    border-radius: 10px;
-    background-color: white;
-}
-h1{
-    text-align: center;
-}
-label{
-    font-weight: bold;
-}
-input{
-    padding: 15px 70% 10px 10px;
-    margin-top: 10px;
-    width: auto;
-    border-color: lightcoral;
-    border-radius: 5px;
-
-}
-p{font-weight: bold;
-
-}
-select{padding: 15px 77.8% 10px 10px;
-    margin-top: 10px;
-    width: auto;
-    border-color: lightcoral;
-    border-radius: 5px;
-    
-}
-
-textarea{
-    border-color: lightcoral;
-    border-radius: 5px;
-}
-
-fieldset{
-    margin-top: 10px;
-    padding: 10px;
-}
+body{background-color:white;
+font-family:ariel;
+margin:0;
+padding:0;
 
 
+}
+form{
+  background-color:white;
+  max-width:500px;
+  margin:50px auto;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 0 15px rgba(0, 0, 0, 0.1);
+
+}
+input,textarea{
+  padding:10px;
+  margin:10 0 20 0px;
+  width:100%;
+  border:1px solid red;
+  border-radius:5px;
+  box-sizing:border-box;
+
+}
+button{width:100%;
+padding:5px;
+margin:0;
+border:1px solid green;
+border-radius:5px;
+background-color:green;
+color:white;
+cursor:pointer;
+
+}
+button:hover{
+  background-color:black;
+
+}
+textarea:valid{
+  border-color:darkblue;
+}
+textarea:invalid{
+  border-color:red;
+}
+input:valid{
+border-color:darkblue;
+}
+input:invalid{
+border-color:red;
+}
+select{
+  padding:10px;
+  width:100%;
+  border:1px solid red;
+  border-radius:5px;
+}
+select:valid{
+  border-color:darkblue;
+}
+select:invalid{
+  border-color:red;
+}
 
 input[type="radio"]{
      width: 20px;
     height: 20px;
-    accent-color: green;
+    accent-color: green;}
 
-    
-}
 input[type="radio"]:checked + label{
-color: green;
-}
-button{
-    display: flex;
-    justify-self: center;
-    background-color: green;
-    padding: 10px 40%;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-    
-}
-button:hover{
-    background-color: black;
-}
-select:invalid {
-  border-color: red;
-}
-select:valid {
-  border-color:darkblue;
-}
-textarea:invalid{
-    border-color: red;
-}
-textarea:valid{
-    border-color: darkblue;
-}
-input:invalid{
-    border-color: red;
-}
-input:valid{
-    border-color: darkblue;
+  color:green;
 }
